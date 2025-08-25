@@ -1,0 +1,134 @@
+/* Estilos para o header da página index.html */
+
+header {
+    width: 100%;
+    background: #1a2236;
+    color: #fff;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* começa pelo canto esquerdo */
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* Logo + nome no canto esquerdo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Menu de navegação */
+.header-nav {
+    display: flex;
+    gap: 24px;
+    margin-left: 40px; /* espaço entre logo e menu */
+    align-items: center;
+    flex-grow: 1; /* faz o menu ocupar o máximo possível */
+    justify-content: flex-start; /* alinha os itens do menu à esquerda */
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+
+/* Links do menu */
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: #ffb400;
+}
+
+/* Login no canto direito */
+#login {
+    display: flex;
+    margin-left: auto; /* empurra pro canto direito */
+    align-items: center;
+    background: #283593;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+#login form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#login input {
+    width: 80px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+#login button {
+    padding: 4px 10px;
+    background: #ffb400;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login button:hover {
+    background: #ffa000;
+}
+
+#login h2 {
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+        gap: 10px;
+    }
+
+    .header-nav {
+        gap: 16px;
+        margin-top: 10px;
+    }
+
+    #login {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #login form {
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+    }
+
+    #login input {
+        width: 100%;
+    }
+
+    #login button {
+        width: 100%;
+    }
+}
