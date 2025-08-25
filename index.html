@@ -3,31 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto interdisciplinar - NeoSolaris</title>
+  <title>NeoSolaris - Monitoramento de Energia</title>
   <link rel="stylesheet" href="src/css/header.css">
   <link rel="stylesheet" href="src/css/styles.css">
-  <style>
-    /* Para rolagem suave */
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Para evitar que o header fixe por cima do conteúdo */
-    main {
-      padding-top: 100px;
-    }
-  </style>
 </head>
-
 <body>
+
   <!-- HEADER -->
   <header>
     <div class="header-container">
+      
       <!-- Logo -->
-       <div class="logo-area">
-            <img src="src/images/logo.png" alt="logoNeoSolaris" width="70px" height="70px">
-            <a href="#inicio" class="header-logo">NeoSolaris</a>
-       </div>
-       
+      <div class="logo-area">
+        <img src="src/images/logo.png" alt="Logo NeoSolaris" class="logo-img">
+        <a href="#inicio" class="header-logo">NeoSolaris</a>
+      </div>
 
       <!-- Navegação -->
       <nav class="header-nav">
@@ -36,78 +26,92 @@
         <a href="#recursos">Recursos</a>
         <a href="#contato">Contato</a>
       </nav>
-    
 
-    <div id="login">
-      <h2>Login</h2>
-      <form>
-        <input type="text" placeholder="Usuario">
-        <input type="password" placeholder="Senha">
-        <button type="submit">Entrar</button>
-        <button type="button" class="Cadastre-se">Cadastre-se</button>
-      </form>
+      <!-- Login -->
+      <div id="login">
+        <form>
+          <input type="text" placeholder="Usuário">
+          <input type="password" placeholder="Senha">
+          <button type="submit">Entrar</button>
+          <button class="Cadastre-se">Cadastre-se</button>
+        </form>        
+      </div>
     </div>
-
-    </div>
-      
 
   </header>
 
   <!-- MAIN -->
   <main>
-    <img src="src/images/Energia-Renovavel.jpg" alt="Imagem de banner" width="100%" height="400px">
-    <section id="inicio">
-      <h2>O que é o NeoSolaris?</h2>
-      <p>
-        O <strong>NeoSolaris</strong> é uma plataforma inovadora voltada para o
-        <em>monitoramento inteligente de energia elétrica</em>.
-        Nosso objetivo é ajudar famílias e empresas a controlarem melhor
-        o consumo, reduzindo custos e impactos ambientais.
-      </p>
-      <img src="src/images/energia-limpa.webp" alt="Imagem de energia limpa" width="600px" height="400px">
-    </section>
-
-    <section id="sobre">
-      <h2>Por que Energia Limpa?</h2>
-      <p>
-        Inspirado no <strong>ODS 7 da ONU</strong>, buscamos contribuir
-        para um futuro sustentável, onde a energia seja
-        <em>acessível, confiável e renovável</em>.
-        Monitorar o consumo é o primeiro passo para adotar práticas mais eficientes.
-      </p>
-      <img src="src/images/energia-limpa2.jpg" alt="Imagem de energia solar" width="600px" height="400px">
-    </section>
-
-    <section id="recursos">
-      <h2>O que você pode acompanhar?</h2>
-      <ul>
-        <li>⚡ Consumo instantâneo dos equipamentos</li>
-        <li>📊 Histórico detalhado de energia utilizada</li>
-        <li>🔔 Alertas de alto consumo em tempo real</li>
-        <li>🌱 Dicas para reduzir desperdícios e economizar</li>
-      </ul>
-      <img src="src/images/dashboard-image.png" alt="Imagem de monitoramento de energia" width="600px" height="400px">
-    </section>
-
     
+    <!-- Hero Banner -->
+    <section class="hero">
+      <img src="src/images/energia-sustentavel-scaled.jpeg" alt="Energia Renovável" class="hero-img">
+    </section>
+
+    <!-- Sobre -->
+    <section id="inicio" class="section-light">
+      <div class="text-content">
+        <h2>O que é o NeoSolaris?</h2>
+        <p>
+          O <strong>NeoSolaris</strong> é uma plataforma inovadora de <em>monitoramento inteligente de energia elétrica</em>, desenvolvida para ajudar famílias, empresas e organizações a controlar seu consumo de forma precisa e eficiente.
+          Com dados em tempo real, gráficos detalhados e relatórios históricos, você consegue identificar padrões de consumo, reduzir desperdícios, economizar dinheiro e contribuir para um futuro mais sustentável. 
+        </p>
+      </div>
+      <img src="src/images/energia-limpa.webp" alt="Energia limpa" class="section-img">
+    </section>
+
+    <!-- Energia limpa -->
+    <section id="sobre" class="section-light">
+      <div class="text-content">
+        <h2>Por que Energia Limpa?</h2>
+        <p>
+          Inspirado no <strong>ODS 7 da ONU</strong>, o NeoSolaris promove a utilização de energia <em>acessível, confiável e renovável</em>.
+          Ao monitorar o consumo de cada equipamento, você adota práticas mais conscientes e inteligentes, reduz impactos ambientais e garante economia no dia a dia.
+          Energia limpa não é apenas uma escolha: é um compromisso com o planeta e com as próximas gerações.
+        </p>
+      </div>
+      <img src="src/images/energia-limpa2.jpg" alt="Energia solar" class="section-img">
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="cards-section">
+  <h2>O que você pode acompanhar?</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="src/images/dashboard-image.png" alt="Consumo Instantâneo">
+      <p>⚡ Consumo instantâneo dos equipamentos</p>
+    </div>
+    <div class="card">
+      <img src="src/images/dashboard-image.png" alt="Histórico">
+      <p>📊 Histórico detalhado de energia utilizada</p>
+    </div>
+    <div class="card">
+      <img src="src/images/dashboard-image.png" alt="Alertas">
+      <p>🔔 Alertas de alto consumo em tempo real</p>
+    </div>
+    <div class="card">
+      <img src="src/images/dashboard-image.png" alt="Dicas">
+      <p>🌱 Dicas para reduzir desperdícios e economizar</p>
+    </div>
+  </div>
+</section>
+
+
   </main>
 
   <!-- FOOTER -->
   <footer id="contato">
-    <div>
+    <div class="footer-content">
       <h2>Junte-se a nós!</h2>
       <p>
         Comece a monitorar seu consumo de energia hoje mesmo.
         Com o NeoSolaris, você terá as ferramentas necessárias para
         fazer escolhas mais conscientes e economizar na conta de luz.
       </p>
-
+      <button>Cadastre-se Gratuitamente</button>
     </div>
-
-    <section>
-      <p>&copy; 2025 NeoSolaris - Todos os direitos reservados.</p>
-    </section>
-
+    <p>&copy; 2025 NeoSolaris - Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
