@@ -1,150 +1,91 @@
-/* Estilos para o header da página index.html */
-
+/* HEADER */
 header {
-    width: 100%;
-    background: #1a2236;
-    color: #fff;
-    padding: 10px 20px; 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+  width: 100%;
+  background: #1a237e;
+  color: #fff;
+  padding: 10px 40px;
+  position: fixed;
+  top:0;
+  z-index: 100;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* começa pelo canto esquerdo */
-    gap: 40px;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Logo + nome no canto esquerdo */
 .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Menu de navegação */
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-logo {
+  color: #ffb400;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .header-nav {
-    display: flex;
-    gap: 24px;
-    margin-left: 0; /* espaço entre logo e menu */
-    align-items: center;
-    flex-grow: 1; /* faz o menu ocupar o máximo possível */
-    justify-content: center; /* alinha os itens do menu à esquerda */
-    font-size: 1.1rem;
-    font-weight: 500;
-    
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex: 1;
 }
 
-/* Links do menu */
 .header-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.2s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.header-nav a:hover {
-    color: #ffb400;
-}
+.header-nav a:hover { color: #ffa000; }
 
-/* Login no canto direito */
+/* LOGIN */
 #login {
-    display: flex;
-    margin-left: auto; /* empurra pro canto direito */
-    align-items: center;
-    background: #283593;
-    padding: 6px 12px;
-    border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
 }
 
-#login form {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+#login form { display:flex; gap:6px; }
 
 #login input {
-    width: 80px;
-    padding: 4px 6px;
-    border: none;
-    border-radius: 4px;
-    font-size: 0.85rem;
+  padding:5px 10px;
+  border-radius:4px;
+  border:none;
 }
 
-#login button {
-    padding: 4px 10px;
-    background: #ffb400;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+#login button { 
+  padding:6px 12px;
+  border:none;
+  border-radius:4px;
+  font-weight:bold;
+  cursor:pointer;
+  background:#ffb400;
 }
 
-#login button:hover {
-    background: #b6790f;
-}
-
-#login h2 {
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    margin-right: 10px;
-    font-size: 1rem;
-}
+#login button:hover { background:#ffa000; }
 
 #login button.Cadastre-se {
-    background: #00b894;      /* cor diferente */
-    color: #fff;
-    border: none;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;/* verde */
-    margin-left: 10px;
+  background:#00b894;
+  color:#fff;
 }
 
-#login button.Cadastre-se:hover {
-    background: #036951; /* verde mais escuro */
-    box-shadow: #036951;
-}
+#login button.Cadastre-se:hover { background:#019875; }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 16px;
-        gap: 10px;
-    }
-
-    .header-nav {
-        gap: 16px;
-        margin-top: 10px;
-    }
-
-    #login {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    #login form {
-        flex-direction: column;
-        gap: 4px;
-        width: 100%;
-    }
-
-    #login input {
-        width: 100%;
-    }
-
-    #login button {
-        width: 100%;
-    }
+@media(max-width:768px){
+  .header-container { flex-direction: column; align-items:flex-start; }
+  .header-nav { justify-content:flex-start; width:100%; margin-top:10px;}
+  #login { align-items:flex-start; margin-top:10px; }
 }
