@@ -31,10 +31,10 @@ header {
 .header-nav {
     display: flex;
     gap: 24px;
-    margin-left: 40px; /* espaço entre logo e menu */
+    margin-left: 0; /* espaço entre logo e menu */
     align-items: center;
     flex-grow: 1; /* faz o menu ocupar o máximo possível */
-    justify-content: flex-start; /* alinha os itens do menu à esquerda */
+    justify-content: center; /* alinha os itens do menu à esquerda */
     font-size: 1.1rem;
     font-weight: 500;
     
@@ -87,7 +87,7 @@ header {
 }
 
 #login button:hover {
-    background: #ffa000;
+    background: #b6790f;
 }
 
 #login h2 {
@@ -98,6 +98,22 @@ header {
     font-size: 1rem;
 }
 
+#login button.Cadastre-se {
+    background: #00b894;      /* cor diferente */
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;/* verde */
+    margin-left: 10px;
+}
+
+#login button.Cadastre-se:hover {
+    background: #036951; /* verde mais escuro */
+    box-shadow: #036951;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
