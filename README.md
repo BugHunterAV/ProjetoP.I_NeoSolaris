@@ -1,6 +1,6 @@
 # NeoSolaris
 
-![Logo do NeoSolaris](src/images/logo.png)
+<img src="src/images/logo.png" alt="Logo do NeoSolaris" width="150">
 
 O **NeoSolaris** é uma plataforma web inovadora para **monitoramento inteligente de energia elétrica**, desenvolvida para ajudar famílias, empresas e organizações a **controlar o consumo de energia de forma eficiente**, identificar padrões, reduzir desperdícios e economizar dinheiro.  
 
