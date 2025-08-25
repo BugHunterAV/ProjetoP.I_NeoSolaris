@@ -93,7 +93,18 @@ main {
 .text-content em {
   font-style: italic;          /* mantém itálico para ênfase */
   color: #0c990c; 
-  font-weight: 800;             /* leve destaque em amarelo suave */
+  font-weight: 800;             
+}
+
+.section-light img {            /* adiciona um efeito hover nas imagens */  
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.section-light img:hover {       /* adiciona um efeito hover nas imagens */  
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .cards-section {
