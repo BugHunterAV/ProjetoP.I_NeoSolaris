@@ -41,6 +41,10 @@ main {
   margin-bottom:20px;
 }
 
+.selection-light h2 {
+  color:#0519f9;
+}
+
 .section-img { 
     width: 30%; 
     height: auto;   
@@ -48,7 +52,49 @@ main {
        
     border-radius: 8px;
 }
-.text-content { flex:1; }
+
+/* Card de título mais sutil */
+.title-card {
+  background-color: rgba(244, 211, 94, 0.2);
+  color: #0D3B66;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  max-width: 400px; /* largura máxima */
+  width: 100%;       /* ocupa 100% até o máximo */
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto; /* centraliza horizontalmente */
+}
+
+
+.text-content {
+  flex: 1;
+  padding: 20px;               /* espaçamento interno confortável */
+  line-height: 1.6;            /* espaçamento entre linhas, melhora leitura */
+  color: #1F1F1F;              /* cor do texto, contraste adequado */
+  font-size: 1rem;             /* tamanho da fonte base */
+}
+
+.text-content p {
+  margin-bottom: 15px;         /* espaçamento entre parágrafos */
+  text-align: justify;          /* justificado deixa mais limpo e profissional */
+  letter-spacing: 0.5px;       /* leve espaçamento entre letras */
+}
+
+.text-content strong {
+  color: #0D3B66;              /* destaque em azul escuro para palavras importantes */
+}
+
+.text-content em {
+  font-style: italic;          /* mantém itálico para ênfase */
+  color: #0c990c; 
+  font-weight: 800;             /* leve destaque em amarelo suave */
+}
 
 .cards-section {
   padding: 30px 20px;
@@ -103,12 +149,6 @@ main {
   margin: 10px 0;
 }
 
-/* Hover */
-
-
-
-
-
 /* FOOTER */
 footer {
   background:#1a237e;
@@ -139,4 +179,11 @@ footer button:hover { background:#ffa000; }
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  .text-content {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
 }
