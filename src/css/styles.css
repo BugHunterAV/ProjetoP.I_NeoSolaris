@@ -2,7 +2,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #f0f4f8;
   color: #222;
   display: flex;
@@ -18,6 +18,15 @@ main {
   display: flex;             /* para organizar seções se quiser flexbox */
   flex-direction: column;    /* empilhar seções verticalmente */
   gap: 40px;                 /* espaço entre cada seção */
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fontes para destaques e botões */
+button, .highlight {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HERO */
